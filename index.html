@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Template</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Lavishly+Yours&display=swap" rel="stylesheet">
+  <style>
+    /* Reset and Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: content-box;
+      font-family: Arial, sans-serif;
+      width: 100%;
+      
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      
+      min-height: 70vh;
+      background-color: #f0f0f0;
+      
+    }
+
+    .birthday-card {
+      width: 500px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      position: relative;
+    }
+
+    /* Drone Logo Style */
+    .drone-logo {
+      position: absolute;
+      top: 70px;
+      left: 110px;
+      width: 80px;
+    }
+
+    /* "Happy Birthday" Text Style */
+    .greeting {
+      margin-top: 120px;
+      font-size: 45px;
+      color: #000;
+      font-family: "Lavishly Yours", cursive;
+      font-weight: normal;
+      display: flexbox;
+      position: absolute;
+      margin-left: -28%;
+    }
+
+    .greeting span {
+      color: #0046C1;
+      font-size: 32px;
+      font-weight: bold;
+      display: block;
+      line-height: 1.2;
+      display: flexbox;
+    }
+
+    /* Message Section */
+    .message {
+      font-size: 14px;
+      color: #333;
+      margin: 15px 0 20px;
+      line-height: 1.5;
+     
+     
+    }
+
+    .message::before {
+      content: "“";
+      font-size: 20px;
+      color: #4f79c2;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
+    .message::after {
+      content: "”";
+      font-size: 20px;
+      color: #084dc6;
+      vertical-align: middle;
+      margin-left: 5px;
+      
+    }
+
+    /* Profile Image Style */
+    .profile-container {
+      display: flex;
+      justify-content: right;
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+
+    .profile {
+      width: 220px;
+      height: 286px;
+      border-radius: 0;
+      border: 3px solid #0046C1;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      
+    }
+
+    /* Name and Designation */
+    .name-designation {
+      position: absolute;
+      bottom: 75px;
+      width: 100%;
+      text-align: center;
+    }
+    .name {
+      width: 185px;
+      height:33px;
+      background-color:#0c15d0;
+      color:#fff;
+      margin-left:337px;
+      font-size:1.2rem;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      
+      
+    }
+
+    .designation {
+      width:185px;
+      height:33px;
+      background-color:#0c15d0;
+      color:#fff;
+      margin-left:337px;
+      font-size:1rem;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+
+    }
+
+    /* Footer */
+    .footer {
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 70px;
+
+      /* bottom: 2px; */
+    
+    }
+  </style>
+</head>
+<body>
+  <div class="birthday-card">
+    <!-- Drone Logo Image -->
+    <img src="igdrones_logo.jpeg" alt="IG Drones Logo" class="drone-logo">
+
+    <!-- Greeting Section -->
+    <p class="greeting">happy <span>BIRTHDAY</span></p>
+
+    <!-- Message Section -->
+    <p class="message">Wishing you a day filled with joy, good health, and endless happiness.</p>
+
+
+    <!-- Profile Picture Section -->
+    <div class="profile-container">
+      <div class="profile">
+        <img src="profile.png" alt="profile" class="profile-image"/>
+      </div>
+    </div>
+
+    <!-- Name and Designation -->
+    <div class="name-designation">
+      <p class="name">Mr./Miss Name Here</p>
+      <p class="designation">(Designation Here)</p>
+    </div>
+
+    <!-- Footer -->
+    <p class="footer">www.igdrones.com</p>
+  </div>
+</body>
+</html>
